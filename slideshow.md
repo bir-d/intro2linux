@@ -65,6 +65,8 @@ Pretty much *everything* is just a bunch of smaller programs stuck together
 - Also known as a "command line" or "terminal"
 - Multiple available
     - The most popular of which is `bash`
+      - It's worth noting that MacOS also uses this!
+      - But it is still not "Linux"
 - What is this useful for?
     - Running more programs of course!
     - Let's go run one
@@ -118,24 +120,14 @@ Common patterns?
 ---
 
 ## Teaching you how to fish
-1. Figure out what your problem is
-2. Figure out what program you need to care about
-3. Look it up lol
+- Google is still your friend
+- Finding out what to Google (and how to interpret the results) is the true challenge
+- It will become easier with time and knowledge!
+![alt](./images/googlemybeloved.gif)
 
 ---
 
-## An easy example
+## So lets go fishing!
 
-![alt](./images/simpleproblem.png) (`file` just prints out the file type of it's argument)
-
----
-
-## An easy example
-
-1. Figure out what your problem is
-![alt](./images/simpleproblems1.png)
-
----
-
-## An easy example
-2. Figure out what program you need to care about
+- There are a few ways to go about getting started with Linux
+- 
