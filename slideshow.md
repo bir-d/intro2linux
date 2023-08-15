@@ -84,6 +84,16 @@ Pretty much *everything* is just a bunch of smaller programs stuck together
 
 --- 
 
+## Let's talk about commands
+Essentially: the name of a program, any required *flags*, then as many required *arguments* as input
+- You can then do all sorts of stuff with the output!
+
+Common patterns?
+- `program`
+- `program` `FLAGS` `TARGET`
+- `program` `FLAGS` `SOURCE` `DESTINATION`
+---
+
 ## Commands...
 ![alt](./images/shellcommandannotated.png)
 
@@ -92,10 +102,7 @@ Pretty much *everything* is just a bunch of smaller programs stuck together
 ## Another one
 ![alt](./images/lsannotated.png)
 
----
 
-## Introducing flags
-![alt](./images/lsflagannotated.png)
 
 ---
 
@@ -113,17 +120,29 @@ Alters a programs *behaviour*
 
 ---
 
-## Anatomy of a command
-Essentially: name of program, any required *flags*, then as many required *arguments* as input
-- You can then do all sorts of stuff with the output!
-    - But this is a whole other can of worms (and might lead you down the evil path of becoming a sysadmin)
-
-Common patterns?
-- `program`
-- `program` `FLAGS` `TARGET`
-- `program` `FLAGS` `SOURCE` `DESTINATION`
+## Introducing flags
+![alt](./images/lsflagannotated.png)
 
 ---
+
+## The file tree
+- Programs will typically operate on files!
+- Files sit in your filesystem
+- Visualise this as a tree!
+
+---
+
+## It has a trunk...
+![alt](./images/trunk.jpeg)
+
+---
+
+- So it's good to know how to effectively reference them.
+- So far you've seen what is called an *absolute path*
+    - This is a path which specifies a file from the root `/` allll the way to the destination!
+    - There's no ambiguity, sure, but it can get boring...
+
+
 
 ## Teaching you how to fish
 ![alt](./images/Teaching%20Fishing.png)
@@ -131,14 +150,10 @@ Common patterns?
 ---
 
 ## Teaching you how to fish
-- Google is still your friend
-- Finding out what to Google (and how to interpret the results) is the true challenge
-- It will become easier with time and knowledge!
-![alt](./images/googlemybeloved.gif)
-
+- How do we actually get things done?
+- I could go over 
 ---
 
-## So lets go fishing!
+## Teaching you how to fish
 
-- There are a few ways to go about getting started with Linux
 - 
