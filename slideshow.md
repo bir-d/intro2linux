@@ -132,17 +132,82 @@ Alters a programs *behaviour*
 
 ---
 
-## It has a trunk...
-![alt](./images/trunk.jpeg)
+## The file tree
+![w:auto h:600](./images/tree.png)
 
 ---
 
-- So it's good to know how to effectively reference them.
+## The file tree
+![w:auto h:600](./images/treeanot.png)
+
+---
+## Referencing files
+- When referring to files, you will typically refer to an *absolute* or *relative* path to the file
+  - Think of a file path as directions to a file.
 - So far you've seen what is called an *absolute path*
     - This is a path which specifies a file from the root `/` allll the way to the destination!
-    - There's no ambiguity, sure, but it can get boring...
+    - For example:
 
+---
+## Absolute file path
+![w:auto h:600](./images/treeanot.png)
 
+---
+## Absolute file path
+![w:auto h:600](./images/treeabspath1.png)
+
+---
+## Absolute file path
+![w:auto h:600](./images/treeabspath2.png)
+
+---
+
+## Absolute file path
+![w:auto h:600](./images/treeabspath3.png)
+
+---
+
+## Absolute file path
+![w:auto h:600](./images/treeabspath4.png)
+
+---
+
+## Absolute file path
+- Lets use our path to `dog.jpg` and supply it to `tiv`, a program for viewing images on the terminal
+
+---
+
+## More on file paths
+- A good thing about absolute file paths is that there's *no* ambiguity.
+- If you specify the whole path, from the root, every time, the file can be in only *one* place.
+  - Follow the tree!
+- They can be tedious to type though, especially when your path is more than a few folders long.
+- The solution: relative paths!
+
+---
+
+## Relative? Relative to what?
+- A relative path is relative to your *current working directory*
+  - This is just a way of expressing "the folder you are in currently"
+- To construct a relative path, just express directions from your current working directory to the file in question.
+- In the case of `/home/bird/pics/dog.jpg`:
+  - If my current working directory is `/home/bird/`, I can specify a relative path as `pics/dog.jpg`
+  - If my current working directory is `/home/bird/pics`, I can specify a relative path as just `dog.jpg` (!!!)
+
+---
+
+## Saving more time with shortcuts
+- What if building relative paths is still too slow for me?
+- There are shortcuts...
+- `~`: represents your home directory
+  - `~` == `/home/bird`
+  - `~/pics` == `/home/bird/pics`
+- `.`: represents your current working directory
+  - This is implicit when specifying most relative paths: `./dog.jpg` == `dog.jpg`
+- `..`: represents the folder *above* your current working directory!
+  - If your CWD is `/home/bird/pics`, `..` == `/home/bird`
+
+---
 
 ## Teaching you how to fish
 ![alt](./images/Teaching%20Fishing.png)
@@ -150,10 +215,79 @@ Alters a programs *behaviour*
 ---
 
 ## Teaching you how to fish
-- How do we actually get things done?
-- I could go over 
+- By now, we've talked about the shell, how to construct commands, and how to refer to files.
+- I could go over how to accomplish all sorts of tasks
+  - But there are far too many for the time provided in this talk.
+  - And theres no guarantee that this would even apply to the distribution of Linux you're using!
+  
 ---
 
-## Teaching you how to fish
+## This doesn't matter though, because:
+- Most tasks you need to do can be worked out logically, and
+- You now have the tools to do this!
 
-- 
+---
+
+## Let's go fishing
+![alt](./images/googlemybeloved.gif)
+- Google is still your friend!
+- In terms of getting a starting point for a lot of problems, it is *invaluable*
+- However, it won't find everything.
+  - This is where you need to strike a balance between reliance on it's results, and tailoring it to your needs.
+
+---
+## Quick note on where to fish
+- Generally, things will boil down to interacting with a program, or editing a file.
+- So a lot of solutions on Google will tell you to do one or both of these.
+- This is where its important to be aware of the composition of your Linux distribution.
+  - Instructions on interacting with `apt`, the package manager on Debian, isn't as useful on Arch, where they use `pacman`
+  - This is going to be the majority of your tailoring.
+
+---
+
+# LIVE FISHING LIVESTREAM
+![alt](./images/fishnews.png)
+
+---
+
+## Getting started/picking a distro
+- There are hundreds of Linux distros out there
+- This is a testament to it's versatility.
+- Most of the time, you'll have the choice of which one to pick!
+
+---
+
+## Ubuntu
+![w:auto h:600](./images/cerabuntu.png)
+
+---
+
+## Ubuntu
+- Definitely the most popular
+- This means you'll get plenty of help!
+- Has desktop and server versions.
+- Uses `apt` for package manager.
+- My recommendation for beginners
+  - Even if just for google-bility
+
+---
+
+## Going beyond
+- If Ubuntu isn't to your liking, there are other distributions, with varying compositions.
+- Ubuntu itself is based on Debian.
+- Explore!
+
+---
+
+## Final notes
+- The best way to learn is to use it!
+- From least to most committal: VM/WSL, Dual boot, Full boot.
+- Generally, the more you commit to it, the faster you learn as you're forced to interact with all it's parts.
+- And if you're using something like Ubuntu, you can't really go wrong!
+- UCC itself is a great place for guidance.
+- If you haven't already: head over to `ucc.asn.au/discord`
+
+---
+
+# Thank you!
+*slides available here: github.com/bir-d/intro2linux*
